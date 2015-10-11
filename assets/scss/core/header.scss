@@ -1,0 +1,30 @@
+.headerContainer{
+  min-width: $content-width;
+  width: 100%;
+  position: relative;
+  float: left;
+  background-color:black;
+  margin-bottom: 20px;
+
+  header{
+    color: white;
+    width: $content-width;
+    margin: 0 auto;
+
+    h1{
+      margin-top: 15px;
+      float: left;
+    }
+
+    ul{
+      float:right;
+      margin-top: 30px;
+
+      li{
+        display: inline-block;
+        padding: 5px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+$el-size: ($content-width / 3) - 9px;
+
+.home{
+  input[type=text]{
+    width: 90%;
+    margin: 0 5%;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .imgEl{
+    width: $el-size;
+    height: $el-size;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    float: left;
+
+    &:nth-child(3n + 1){
+      margin-right: 0px;
+    }
+  }
+}
