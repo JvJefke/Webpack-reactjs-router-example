@@ -44,6 +44,7 @@ var Home = React.createClass({
             function(src, key){
                 return(
                   <div key={'imgEl_' + key} className='imgEl' style={{backgroundImage: 'url(' + src + ')'}}>
+                      <a href={src}>{src}</a>
                   </div>
                 );
             }

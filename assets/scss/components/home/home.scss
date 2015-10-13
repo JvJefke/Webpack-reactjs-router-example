@@ -9,6 +9,7 @@ $el-size: ($content-width / 3) - 9px;
   }
 
   .imgEl{
+    position: relative;
     width: $el-size;
     height: $el-size;
     margin-right: 13px;
@@ -17,6 +18,19 @@ $el-size: ($content-width / 3) - 9px;
 
     &:nth-child(3n + 1){
       margin-right: 0px;
+    }
+
+    a{
+      position: absolute;
+      bottom: 0px;
+      overflow: auto;
+      display:block;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      text-decoration: none;
     }
   }
 }
