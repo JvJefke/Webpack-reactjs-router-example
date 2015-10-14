@@ -18,14 +18,9 @@ var express = require('express'),
 
     app.use(webpackHotMiddleware(webpackCompiler));
 
-    app.use(function(req, res, next){
-      if(path.extname(req.path).length > 0){
-        next();
-      }
-      else {
-        req.url = '/index.html';
-        next();
-      }
+    app.all('/*', function(req, res, next) {
+      // Just send the index.html for other files to support HTML5Mode
+      res.sendFile('index.html', { root: __dirname });
     });
 
     app.listen(process.env.PORT || 8001 );

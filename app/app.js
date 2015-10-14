@@ -5,9 +5,6 @@
   var ReactRouter = require('react-router');
   var ReactDOM = require('react-dom');
   var Router = ReactRouter.Router;
-  var Route = ReactRouter.Route;
-  var IndexRoute = ReactRouter.IndexRoute;
-  var Link = ReactRouter.Link;
   var createHistory = require('history').createHistory;
   var useBasename = require('history').useBasename;
 
